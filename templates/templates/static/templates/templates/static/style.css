@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.upload-box {
+    background: white;
+    padding: 45px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.upload-box h2 {
+    margin-bottom: 10px;
+}
+
+.upload-box p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+input[type="file"] {
+    margin: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #24292f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.score-card {
+    background: white;
+    padding: 35px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+.score {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.result-section {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill,
+.missing {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: #eef2f7;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #24292f;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
