@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resume Analysis Result</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Resume Analysis</h1>
+
+        <div class="score-card">
+
+            <h2>ATS Skill Score</h2>
+
+            <div class="score">
+                {{ score }}%
+            </div>
+
+            <h3>{{ level }}</h3>
+
+        </div>
+
+
+        <div class="result-section">
+
+            <h2>Skills Found</h2>
+
+            {% if skills %}
+
+            <div class="skills">
+
+                {% for skill in skills %}
+
+                <span class="skill">
+                    ✓ {{ skill }}
+                </span>
+
+                {% endfor %}
+
+            </div>
+
+            {% else %}
+
+            <p>No matching skills found.</p>
+
+            {% endif %}
+
+        </div>
+
+
+        <div class="result-section">
+
+            <h2>Skills You Can Add</h2>
+
+            {% if missing %}
+
+            <div class="skills">
+
+                {% for skill in missing[:8] %}
+
+                <span class="missing">
+                    + {{ skill }}
+                </span>
+
+                {% endfor %}
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+
+        <a href="/" class="back-button">
+            Analyze Another Resume
+        </a>
+
+    </div>
+
+</body>
+
+</html>
